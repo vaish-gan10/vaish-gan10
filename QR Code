@@ -1,0 +1,9 @@
+import pyqrcode 
+import png
+from pyqrcode import QRCode
+
+myLinkedinLink = "https://www.linkedin.com/in/vaishnavi-gangwar-694704255/"
+myEmail = "vaishnavigangwar1810@gmail.com"
+url = pyqrcode.create(myLinkedinLink+myEmail)
+url.svg("vaishmyqr.svg",scale=8)
+url.png('vaishmyqr.png',scale=6)
